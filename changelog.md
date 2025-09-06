@@ -25,3 +25,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - removed folder videos
+
+## [2.0] - 2025-09-06
+
+### Added
+
+- main.js
+- folder js
+
+### Fixed
+- removed from sessions redundancy
+
+### Changed
+- index.html, general code improvements
+- index.html, new scripts added
+- main.css, restyled the menu, created the burger menu
+- main.css, general improvements
+- main.js, created the image carousel, hamburger menu and completed the form validations

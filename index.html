@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O melhor jogo da minha vida</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -12,29 +14,45 @@
             <h1>
                 Dark Souls II
             </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#intro">Introdução</a>
-                    </li>
-                    <li>
-                        <a href="#history">História</a>
-                    </li>
-                    <li>
-                        <a href="#dlcs">DLCs</a>
-                    </li>
-                    <li>
-                        <a href="#conclusion">Conclusão</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contate-nos</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#intro">Introdução</a>
+                        </li>
+                        <li>
+                            <a href="#history">História</a>
+                        </li>
+                        <li>
+                            <a href="#dlcs">DLCs</a>
+                        </li>
+                        <li>
+                            <a href="#conclusion">Conclusão</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contate-nos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
     </header>
+    <div id="carousel">
+        <img src="images/carousel-00.jpg" alt="">
+        <img src="images/carousel-01.avif" alt="">
+        <img src="images/carousel-02.jpg" alt="">
+        <img src="images/carousel-03.jpg" alt="">
+        <img src="images/carousel-04.webp" alt="">
+        <img src="images/carousel-05.png" alt="">
+        <img src="images/carousel-06.jpg" alt="">
+    </div>
 
-    <section id="intro">
+    <section id="intro" class="style-section">
         <div class="container">
             <img class="images" src="./images/dark_souls_2_introdução_maldita.png" alt="Imagem de um cenário do jogo">
             <div>
@@ -52,7 +70,7 @@
         </div>
     </section>
 
-    <section id="history">
+    <section id="history" class="style-section">
         <div class="container">
             <img class="images" src="./images/dark_souls_2_perseguidor.png" alt="Chefe inicial, perseguidor, dark souls 2">
             <div>
@@ -69,7 +87,7 @@
             </div>
         </div>
     </section>
-    <section id="dlcs">
+    <section id="dlcs" class="style-section">
         <div class="container">
             <img class="images" id="imagedlc" src="./images/dlcs.png" alt="Imagem que ilustra as DLCs">
             <div>
@@ -103,7 +121,7 @@
         </div>
     </section>
 
-    <section id="conclusion">
+    <section id="conclusion" class="style-section">
         <div class="container">
             <img class="images" id="imageconclusion" src="./images/dark_souls_2_conclusão.png" alt="Imagem épica de um cenário inspirado no jogo Dark souls 2">
             <div>
@@ -119,7 +137,7 @@
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="style-section">
         <div class="container">
             <img class="images" id="imgContact" src="images/dark_souls_2_contact.png" alt="Homem sentado no sofá jogando dark souls 2 na televisão">
             <div>
@@ -136,9 +154,10 @@
                 <div id="contactForm" class="container">
                     <form action="">
                         <h3>Preencha todos os campos:</h3>
-                        <input type="text" placeholder="Insira seu nome..." name="name" id="iName" required>
-                        <input type="email" placeholder="Insira seu e-mail..." name="email" id="iEmail"required>
-                        <textarea name="txtArea" placeholder="Conte-nos sua experiência..." id="iTxtArea" required></textarea>
+                        <input type="text" placeholder="Insira seu nome..." name="nome" id="iName" >
+                        <input type="email" placeholder="Insira seu e-mail..." name="email" id="iEmail">
+                        <input type="tel" name="tel" id="iTel">
+                        <textarea name="txtArea" placeholder="Conte-nos sua experiência..." id="iTxtArea"></textarea>
                         <button type="submit">Enviar</button>
                     </form>
                     <img id="imgForm" src="./images/dark_souls_2_form.png" alt="">
@@ -153,6 +172,12 @@
             </p>
         </div>
     </footer>
-    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

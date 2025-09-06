@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #b8860b;
+    color: #ecf0f1;
+}
+
 header nav li {
     display: inline;
     margin-left: 16px;
@@ -19,6 +29,7 @@ section h2{
 }
 
 header h1 {
+    padding-top: 16px;
     font-size: 40px;
     font-weight: normal;
 }
@@ -33,12 +44,41 @@ header nav li a:hover {
     text-decoration: underline;
 }
 
+header nav{
+    display: none;
+    padding: 20px 0;
+    background-color: #836006;
+}
+
+.menu-hamburguer{
+    padding-top: 17px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#carousel{
+    width: 80%;
+    margin: 20px auto;
+}
+
+#carousel img{
+    height: 800px;
+}
+
 body {
     background-color: #eeae0c6b;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 80%;
     width: 100%;
     margin: 0 auto;
 }
@@ -48,16 +88,7 @@ section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-header {
-    max-width: 1366px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: #b8860b;
-    padding: 16px 0;
-    color: #ecf0f1;
 }
 
 section .container{
@@ -70,11 +101,12 @@ section .container p {
     font-size: 14px;
 }
 
-#intro {
-    padding-top: 90px;
+.style-section{
+    padding-top: 70px;
     border: 0;
+    border-top: 60px;
     border-style: solid;
-    border-color: #b8860b;
+    border-color: #b8870b77;
 }
 
 .images {
@@ -85,14 +117,6 @@ section .container p {
 
 #intro iframe {
     margin-left: 16px;
-}
-
-#history, #dlcs, #conclusion, #contact {
-    padding: 5px;
-    border: 0;
-    border-top: 60px;
-    border-style: solid;
-    border-color: #b8870b77;
 }
 
 #imagedlc, #imgContact {
@@ -109,7 +133,7 @@ section .container p {
     padding: 6px;
     max-width: 750px;
     width: 100%;
-    height: 368px;
+    height: 430px;
     background-color: #be8a0546;
 }
 #contactForm h3 {
@@ -129,7 +153,7 @@ section .container p {
     margin-top: 10px;
     margin-left: 10px;
     width: 300px;
-    height: 200px;
+    height: 170px;
 }
 
 #contactForm form button {
@@ -143,13 +167,12 @@ section .container p {
 }
 
 #imgForm {
-    margin: 5px 50px;
+    margin: 30px 50px;
     height: 350px;
     width: 300px;
 }
 
 footer {
-    max-width: 1366px;
     width: 100%;
     padding: 10px;
     background-color: #b8860b;
