@@ -57,3 +57,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - main.css, adjusted the dlc session and contacts
 - main.js, created the click event for the favorite dlc images that populates the favorite dlc field
 - main.js, created a click event for h1 that takes the screen to the top
+
+## [3.1] - 2025-09-08
+
+### Fixed
+- corrected phone input text
