@@ -42,3 +42,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - main.css, restyled the menu, created the burger menu
 - main.css, general improvements
 - main.js, created the image carousel, hamburger menu and completed the form validations
+
+## [3.0] - 2025-09-08
+
+### Added
+
+- 3 images in folder images
+
+### Fixed
+- general css fix
+
+### Changed
+- index.html, fine-tuning the code
+- main.css, adjusted the dlc session and contacts
+- main.js, created the click event for the favorite dlc images that populates the favorite dlc field
+- main.js, created a click event for h1 that takes the screen to the top

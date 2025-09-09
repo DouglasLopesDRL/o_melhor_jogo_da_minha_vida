@@ -32,4 +32,16 @@ $(document).ready(function(){
             email: 'Por favor insira seu email'
         }
     });
+
+    $('.imgDlcsFavoritas').click(function(){
+        const dlcFavorita = $(this).parent().find('h3').text();
+        $('#iDlc').val(dlcFavorita);
+    });
+
+    $('h1').click(function(){
+        const destino = $('#carousel');
+        $('html').animate({
+            scrollTop: destino.offset().top
+        }, 1000);
+    });
 });
