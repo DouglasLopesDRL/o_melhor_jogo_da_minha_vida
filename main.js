@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 
     $('#iTel').mask('(00) 00000-0000', {
-        placeholder: "Insira seu telfone celular..."
+        placeholder: "Insira seu telefone celular..."
     });
 
     $('form').validate({
