@@ -62,3 +62,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - corrected phone input text
+
+## [4.0] - 2025-09-08
+
+### chnaged
+- main.css, created an error class for the inputs
+- main.js, creating two validators when submitting the form
