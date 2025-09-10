@@ -205,4 +205,8 @@ footer p {
     font-weight: bold;
 }
 
+.error{
+    color: rgb(255, 51, 0);
+}
+
 
