@@ -30,6 +30,15 @@ $(document).ready(function(){
             nome: 'Por favor insira seu nome',
             tel: 'Por favor insira seu telefone celular',
             email: 'Por favor insira seu email'
+        },
+        submitHandler: function (form) {
+            form.reset();
+        },
+        invalidHandler: function (event, validator) {
+            if(validator.numberOfInvalids()){
+                alert("Por favor, preencha os campos para realizar a pesquisa");
+            }
+                    
         }
     });
 
